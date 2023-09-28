@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet" />
+    <title>Hamburger</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <h1 class="header h1">BURGERS & CO.</h1>
+        <h2 class="header h2">Choose a burger</h2>
+        <div id="cross"></div>
+        <div class="cards">
+          <div id="small" class="ham">
+            <img
+              class="img"
+              src="./img/small-hamburger.jpg"
+              alt="small-hamburger" />
+            <h3 class="header h3">Small hamburger</h3>
+            <h3 class="header h3 info info-small">Price: 50$. Calories: 20.</h3>
+          </div>
+          <div id="big" class="ham">
+            <img
+              class="img"
+              src="./img/big-hamburger.jpg"
+              alt="big-hamburger" />
+            <h3 class="header h3">Big hamburger</h3>
+            <h3 class="header h3 info info-big">Price: 100$. Calories: 40.</h3>
+          </div>
+          <div class="stuff-list">
+            <li class="item stuff">Cheese</li>
+            <span class="stuff-info">(10$/20 calories)</span>
+            <li class="item stuff">Salad</li>
+            <span class="stuff-info">(20$/5 calories)</span>
+            <li class="item stuff">Potato</li>
+            <span class="stuff-info">(15$/10 calories)</span>
+          </div>
+          <div class="add-list">
+            <li class="item add">
+              <p class="item add name">Seasoning</p>
+              <span class="stuff-info">(15$/0 calories)</span
+              ><input type="checkbox" name="c1" id="c1" />
+              <label for="c1"></label>
+            </li>
+            <li class="item add">
+              <p class="item add name">Mayonnaise</p>
+              <span class="stuff-info">(20$/5 calories)</span>
+              <input type="checkbox" name="c1" id="c2" />
+              <label for="c2"></label>
+            </li>
+          </div>
+          <a id="btn-confirm">Confirm</a>
+        </div>
+        <div id="summary"></div>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
